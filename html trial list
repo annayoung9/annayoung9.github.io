@@ -11,8 +11,8 @@
 </body>
 </html>
 <script>
-console.log("Hello")
-let task numbers = ['1','2','3','4','5']
+console.log("Tasks")
+let tasknumbers = ['1','2','3','4','5']
 for (let i = 0; i<tasknumbers.;length; i++)
 { console.log('Task'+ tasknumbers[i])}
 <script/>
