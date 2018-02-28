@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <head>
+  <title>Homework To-Do </title>
+  <head/>
+<ul>
+<li> Chemistry packet </li>
+<li> Study for Spanish test </li>
+<li> Read Huckleberry Finn </li>
+</body>
+</html>
+<script>
+console.log("Hello")
+let task numbers = ['1','2','3','4','5']
+for (let i = 0; i<tasknumbers.;length; i++)
+{ console.log('Task'+ tasknumbers[i])}
+<script/>
