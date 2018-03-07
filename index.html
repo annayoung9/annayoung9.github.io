@@ -39,8 +39,8 @@
 function addbackFunction(){
 
   var parent = document.getElementById("myUL");
-  var child = "tester"
-  element.appendChild(para);
+  var child = document.getElementById("tester")
+  parent.appendChild(child);
 }
 function deleteFunction(){
   var parent = document.getElementById("myUL");
@@ -54,8 +54,8 @@ function myFunction() {
 <script>
 console.log("Tasks")
 let tasknumbers = ['1','2','3','4','5']
-for (let i = 0; i<tasknumbers.length; i++)
-{ console.log('Task'+ tasknumbers[i])}
+for (let i = 0; i<tasknumbers.length; i++){
+  console.log('Task'+ tasknumbers[i])}
 function addFunction()
 
 </script>
