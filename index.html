@@ -31,7 +31,7 @@
   <li>Meet George <button>delete</button> </li>
   <li>Buy eggs</li>
   <li>Read a book</li>
-  <li>Organize office</li>
+  <li id="tester">Organize office</li>
 </ul>
 <button style= "color:white; background-color:green;" onclick= "deleteFunction()">delete</button>
 
@@ -43,7 +43,7 @@
 
 function deleteFunction(){
   var parent = document.getElementById("myUL");
-  var child = document.getElementById("<li>Organize office</li>");
+  var child = document.getElementById("tester");
   parent.removeChild(child);
 }
 function myFunction() {
