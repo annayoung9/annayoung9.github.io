@@ -56,9 +56,9 @@ function addFunction(){
 var text = document.createTextNode(inputValue);
 var x = document.createElement("LI");
 x.appendChild(text);
-var parent= getElementById('myUL')
-var child= getElementById('x')
-parent.appendChild(child)
+var parent= getElementById('myUL');
+
+parent.appendChild(x);
 }
 function myFunction() {
     document.getElementById("demo").innerHTML = "Did you complete your tasks??";
