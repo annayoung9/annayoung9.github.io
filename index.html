@@ -36,15 +36,16 @@
 <p id="demo"></p>
 <a href="new.html">link new</a>
 <script>
+var child
 function addbackFunction(){
 
   var parent = document.getElementById("myUL");
-  var child = document.getElementById("tester")
+  child = document.getElementById("tester")
   parent.appendChild(child);
 }
 function deleteFunction(){
   var parent = document.getElementById("myUL");
-  var child = document.getElementById("tester");
+  child = document.getElementById("tester");
   parent.removeChild(child);
 }
 function myFunction() {
