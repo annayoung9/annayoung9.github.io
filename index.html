@@ -37,7 +37,10 @@
 <p id="demo"></p>
 <a href="new.html">link new</a>
 <script>
-
+function addFunction(){
+  var element = document.getElementById("myInput");
+  element.appendChild(para);
+}
 function deleteFunction(){
   var parent = document.getElementById("myUL");
   var child = document.getElementById("tester");
