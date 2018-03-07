@@ -11,6 +11,7 @@
 
   </style>
 </head>
+
 <body>
 
 
@@ -41,7 +42,9 @@
 <script>
 
 function deleteFunction(){
-  document.getElementById("li").Remove
+  var parent = document.getElementById("myUL");
+  var child = document.getElementById("li");
+  parent.removeChild(child);
 }
 function myFunction() {
     document.getElementById("demo").innerHTML = "Did you complete your tasks??";
