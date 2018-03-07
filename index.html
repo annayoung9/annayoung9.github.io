@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <style>
+  .checked{
+    color:blue;
+    background-color:red;
+  }
+  </style>
+</head>
 <body>
-      <link rel="stylesheet" type="text/css" href="css">
 
 
 This is the list of things I need to do this week:
-<div id="myDIV" class="header">
+<div id="myDIV" class="header" style="background-color:red;">
   <h2>My To Do List</h2>
+  <button onclick="addFunction()">Add</button>
+
+
   <input type="text" id="myInput" placeholder="Title...">
-  <span onclick="newElement()" class="addBtn">Add</span>
+
 </div>
-<span onclick="sortList()" class="addBtn">sort </span>
+
 <ul id="myUL">
   <li>Hit the gym</li>
   <li class="checked">Pay bills</li>
@@ -19,13 +29,17 @@ This is the list of things I need to do this week:
   <li>Read a book</li>
   <li>Organize office</li>
 </ul>
+<button onclick= "deleteFunction()">delete</button>
 
 
-<script type="text/javascript" src="scriptfile.js"></script>
 <button onclick="myFunction()">Click for a Question!</button>
 <p id="demo"></p>
-
+<a href="new.html">link new</a>
 <script>
+
+function deleteFunction(){
+  document.getElementById("myUL")=Remove
+}
 function myFunction() {
     document.getElementById("demo").innerHTML = "Did you complete your tasks??";
 }
@@ -35,6 +49,8 @@ console.log("Tasks")
 let tasknumbers = ['1','2','3','4','5']
 for (let i = 0; i<tasknumbers.length; i++)
 { console.log('Task'+ tasknumbers[i])}
+function addFunction()
+
 </script>
 </body>
 </html>
