@@ -57,7 +57,8 @@ function deleteLastFunction() {
     var my_ul = document.getElementById("myUL");
     var li_array = my_ul.getElementsByTagName("LI");
     var lilength = li_array.length;
-    child = li_array [lilength -1];
+    console.log(lilength);
+    child = li_array[lilength -1];
     parent.removeChild(child)
 }
 
@@ -81,7 +82,7 @@ console.log("Tasks")
 let tasknumbers = ['1','2','3','4','5']
 for (let i = 0; i<tasknumbers.length; i++){
   console.log('Task'+ tasknumbers[i])}
-function addFunction()
+
 
 </script>
 </body>
