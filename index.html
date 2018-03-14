@@ -67,6 +67,7 @@ function addFunction(){
   var inputValue= document.getElementById("myInput").value;
 
 var text = document.createTextNode(inputValue);
+document.getElementById("myInput").value = "";
 var x = document.createElement("LI");
 x.appendChild(text);
 var parent= document.getElementById('myUL');
