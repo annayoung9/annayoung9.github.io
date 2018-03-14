@@ -33,6 +33,7 @@
 <button style= "color:white; background-color:green;" onclick= "deleteFunction()">Delete</button>
 <button style = "color:white; background-color:green" onclick= "addbackFunction()">Add Back an Item</button>
 <button style = "color:white; background-color:green;" onclick="myFunction()">Click for a Question!</button>
+<button style = "color:white; background-color:green;" onclick= "deleteLastFunction">Delete Last Entry </button>
 <p id="demo"></p>
 <a href="new.html">link new</a>
 <script>
@@ -49,6 +50,14 @@ function deleteFunction(){
   parent.removeChild(child);
 }
 
+function deleteLastFunction() {
+    var list = document.getElementsByTagName("myUL")[5];
+    list.getElementsByTagName("li")[5].innerHTML;
+    var parent = document.getElementById ("myUL")
+    child = list.getElementsByTagName ("li")[5].innerHTML
+    parent.removeChild(child)
+}
+</script>
 
 function addFunction(){
   var inputValue= document.getElementById("myInput").value;
