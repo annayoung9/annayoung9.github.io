@@ -54,10 +54,10 @@ function deleteFunction(){
 }
 
 function deleteLastFunction() {
-    var list = document.getElementsByTagName("myUL")[5];
-    li_array = my_ul.getElementsByTagName("LI")[5].innerHTML;
-    var parent = document.getElementById ("myUL")
-    child = list.getElementsByTagName ("li")[5].innerHTML
+    var my_ul = document.getElementById("myUL");
+    var li_array = my_ul.getElementsByTagName("LI");
+    var lilength = li_array.length;
+    child = li_array [lilength -1];
     parent.removeChild(child)
 }
 
