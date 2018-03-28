@@ -16,9 +16,9 @@
 <div id="myDIV" class="header" style="background-color:red;">
   <h2>My To Do List</h2>
   <button style = "color:white; background-color: green" onclick="addFunction()">Add</button>
-  <button style = "color:white; background-color: green" onclick="addPriorityFunction()">Add</button>
 
-  <input type="text" id="priority" placeholder= "Priority (1-3)...">
+
+  <input type="text" id="priorityInput" placeholder= "Priority (1-3)...">
   <input type="text" id="myInput" placeholder="Title...">
 
 </div>
@@ -62,19 +62,9 @@ function deleteLastFunction() {
     child = li_array[lilength -1];
     my_ul.removeChild(child)
 }
-function addPriorityFunction(){
-  var inputValue= document.getElementById("myInput").value;
 
-var text = document.createTextNode(inputValue);
-document.getElementById("myInput").value = "";
-var x = document.createElement("LI");
-x.appendChild(text);
-var parent= document.getElementById('myUL');
-
-parent.appendChild(x);
-}
 function addFunction(){
-  var inputValue= document.getElementById("myInput").value;
+  var inputValue= document.getElementById("myInput").value; var priorityInput= document.getElementById('priorityInput').value;
 
 var text = document.createTextNode(inputValue);
 document.getElementById("myInput").value = "";
@@ -83,6 +73,15 @@ x.appendChild(text);
 var parent= document.getElementById('myUL');
 
 parent.appendChild(x);
+
+var text = document.createTextNode(priorityInput);
+document.getElementById("priorityInput").value = "";
+var x = document.createElement("LI");
+x.appendChild(text);
+var parent= document.getElementById('myUL');
+
+parent.appendChild(x);
+
 }
 function myFunction() {
     document.getElementById("demo").innerHTML = "Did you complete your tasks??";
