@@ -68,15 +68,17 @@ function addFunction(){
 
 var text = document.createTextNode(inputValue);
 document.getElementById("myInput").value = "";
-var x = document.createElement("LI");
+var newLI = document.createElement("LI");
 x.appendChild(text);
 var parent= document.getElementById('myUL');
 
-parent.appendChild(x);
+parent.appendChild(newLI);
 
-var text = document.createTextNode(priorityInput);
+ newLI.style.backgroundColor = "green"
+
+
 document.getElementById("priorityInput").value = "";
-console.log("priorityInput")
+console.log(priorityInput)
 
 }
 function myFunction() {
