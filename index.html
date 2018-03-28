@@ -74,7 +74,20 @@ newLI.appendChild(text);
 var parent= document.getElementById('myUL');
 
 parent.appendChild(newLI);
- newLI.style.backgroundColor = "green"
+
+
+if (inputPriority === "1") {
+   newLI.style.backgroundColor = "green";
+}
+
+if (inputPriority === "2") {
+   newLI.style.backgroundColor = "yellow";
+}
+
+if (inputPriority === "3") {
+   newLI.style.backgroundColor = "red";
+}
+}
 
 
 
