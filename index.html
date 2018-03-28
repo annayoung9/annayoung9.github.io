@@ -74,7 +74,10 @@ var parent= document.getElementById('myUL');
 
 parent.appendChild(x);
 
+var text = document.createTextNode(priorityInput);
+document.getElementById("priorityInput").value = "";
 console.log("priorityInput")
+
 }
 function myFunction() {
     document.getElementById("demo").innerHTML = "Did you complete your tasks??";
