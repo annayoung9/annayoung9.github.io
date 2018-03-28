@@ -37,6 +37,7 @@
 <button style = "color:red; background-color:white" onclick= "addbackFunction()">Add Back an Item</button>
 <button style = "color:red; background-color:white;" onclick="myFunction()">Click for a Question!</button>
 <button style = "color:red; background-color:white;" onclick= "deleteLastFunction()">Delete Last Entry </button>
+
 </div>
 <p id="demo"></p>
 <a href="new.html">link new</a>
@@ -69,12 +70,13 @@ function addFunction(){
 var text = document.createTextNode(inputValue);
 document.getElementById("myInput").value = "";
 var newLI = document.createElement("LI");
-x.appendChild(text);
+newLI.appendChild(text);
 var parent= document.getElementById('myUL');
 
 parent.appendChild(newLI);
-
  newLI.style.backgroundColor = "green"
+
+
 
 
 document.getElementById("priorityInput").value = "";
