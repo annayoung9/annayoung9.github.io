@@ -70,22 +70,23 @@ function addFunction(){
   document.getElementById("myInput").value = "";
   newLI.appendChild(text);
 
-  var list = document.getElementById("myUL")
-   list.insertBefore(newLI,
+  myUL = document.getElementById("myUL")
+  var list = document.getElementsByTagName("LI");
+   list.insertBefore(inputValue),
    list.childNodes[0]);
 
 
   if (priorityInput === "1") {
    newLI.style.backgroundColor = "red";
-}
+  }
 
   if (priorityInput === "2") {
    newLI.style.backgroundColor = "yellow";
-}
+  }
 
   if (priorityInput === "3") {
    newLI.style.backgroundColor = "green";
-}
+  }
 
 
 
