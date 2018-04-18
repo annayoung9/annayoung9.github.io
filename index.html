@@ -68,12 +68,13 @@ function addFunction(){
 
   var textnode = document.createTextNode(inputValue);
   document.getElementById("myInput").value = "";
+  var newLI = document.createElement("newLI")
   newLI.appendChild(text);
 
   myUL = document.getElementById("myUL")
   var list = document.getElementsByTagName("LI");
-   list.insertBefore(inputValue),
-   list.childNodes[0]);
+   list.insertBefore(newLI),
+   list[0]);
 
 
   if (priorityInput === "1") {
