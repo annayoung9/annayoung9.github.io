@@ -73,7 +73,7 @@ function addFunction(){
 
   myUL = document.getElementById("myUL")
   var list = document.getElementsByTagName("LI");
-   list.insertBefore(newLI),
+   list.insertBefore(newLI,
    list[0]);
 
 
@@ -89,12 +89,8 @@ function addFunction(){
    newLI.style.backgroundColor = "green";
   }
 
-
-
-
-
-document.getElementById("priorityInput").value = "";
-console.log(priorityInput)
+  document.getElementById("priorityInput").value = "";
+  console.log(priorityInput)
 
 }
 function myFunction() {
