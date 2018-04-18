@@ -3,8 +3,7 @@
 <head>
   <style>
 
-
-
+  <!--- Im doing this so that the changes with display in github --->
 
   </style>
 </head>
@@ -67,13 +66,13 @@ function deleteLastFunction() {
 function addFunction(){
   var inputValue= document.getElementById("myInput").value; var priorityInput= document.getElementById('priorityInput').value;
 
-var text = document.createTextNode(inputValue);
-document.getElementById("myInput").value = "";
-var newLI = document.createElement("LI");
-newLI.appendChild(text);
-var parent= document.getElementById('myUL');
+  var textnode = document.createTextNode(inputValue);
+  document.getElementById("myInput").value = "";
+  newLI.appendChild(text);
 
-parent.appendChild(newLI);
+  var list = document.getElementById("myUL")
+   list.insertBefore(newLI,
+  list.childNodes[0]);
 
 
   if (priorityInput === "1") {
