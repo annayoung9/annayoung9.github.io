@@ -23,19 +23,13 @@
 </div>
 
 <ul id="myUL">
+<li style = "background-color:red;" >Hit the gym</li>
+<li style = "background-color:red;" >Pay bills</li>
+<li style = "background-color:yellow;">Meet George</li>
+<li style = "background-color:yellow;">Buy Eggs</li>
+<li style = "background-color:green;" >Read a book</li>
+<li style = "background-color:green;"id="tester">Organize office</li>
 
-
-    <li style = "background-color:red;" >Hit the gym</li>
-
-    <li style = "background-color:red;" >Pay bills</li>
-
-    <li style = "background-color:yellow;">Meet George</li>
-
-    <li style = "background-color:yellow;">Buy Eggs</li>
-
-    <li style = "background-color:green;" >Read a book</li>
-
-    <li style = "background-color:green;" >Organize office</li>
 
 </ul>
 <div id="buttonSection" class="header" style="background-color:blue;">
@@ -82,35 +76,30 @@ function addFunction(){
   myUL = document.getElementById("myUL")
   var list = document.getElementsByTagName("LI");
   added = false;
-if (priority === "1") {
- background-color = "red':
- myUL.insertBefore(newLI, list[0]);
- added = true;
-}
-if (pririty === "2") {
- background-coloe = "yellow";
- myUL.insertBefore(newLI, list[0]);
- added = true;
-}
-if (priority === "3") {
- background-color = "green";
-}
-if (added === false) {
- myUL.appendChild(newLI);
-}
+
 
 
   if (priorityInput === "1") {
-   newLI.style.backgroundColor = "red";
-  }
+       newLI.style.backgroundColor = "red";
+       myUL.insertBefore(newLI, list[0]);
+       added = true;
+     }
 
-  if (priorityInput === "2") {
-   newLI.style.backgroundColor = "yellow";
-  }
+     if (priorityInput === "2") {
+       newLI.style.backgroundColor = "yellow";
+       myUL.insertBefore(newLI, list[0]);
+       added = true;
+     }
 
-  if (priorityInput === "3") {
-   newLI.style.backgroundColor = "green";
-  }
+     if (priorityInput === "3") {
+       newLI.style.backgroundColor = "green";
+     }
+
+     if (added === false) {
+       myUL.appendChild(newLI);
+     }
+
+
 
   document.getElementById("priorityInput").value = "";
   console.log(priorityInput)
