@@ -81,15 +81,23 @@ function addFunction(){
 
   if (priorityInput === "1") {
        newLI.style.backgroundColor = "red";
-       myUL.insertBefore(newLI, list[0]);
-       added = true;
+       for (let i = 0;  i < list.length; i++)
+       {
+         console.log("index " +i "color " +list[i].style.backgroundColor);
+         if (list[i].style.backgroundColor === "green" ||
+          list[i].style.backgroundColor === "yellow" ) {
+           myUL.insertBefore(newLI, list[i]);
+           added = true;
+           break;
+         }
+       }
      }
 
      if (priorityInput === "2") {
        newLI.style.backgroundColor = "yellow";
        for (let i = 0;  i < list.length; i++)
        {
-        // console.log("index " +i "color " +list[i].style.backgroundColor);
+         console.log("index " +i "color " +list[i].style.backgroundColor);
          if (list[i].style.backgroundColor === "green") {
            myUL.insertBefore(newLI, list[i]);
            added = true;
